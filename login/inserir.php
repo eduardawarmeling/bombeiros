@@ -4,9 +4,9 @@
     $email     = $_POST["email"];
     $senha      = $_POST["senha"];
 
-    $comando = $pdo->prepare("INSERT INTO login_bombeiro VALUES('$email','$senha')" );
+    $comando = $pdo->prepare("SELECT email, senha FROM cadastrobomb WHERE email ,senha = \"$email\", \"$senha\" ");
     $resultado = $comando->execute();
 
     // Para voltar no formulário:
-    header("Location: login.html");
+    header("Location: menu/menu.html");
 ?>
