@@ -1,29 +1,37 @@
-body{
-    background-color: #f8e9ed;
-    font-family: 'Montserrat', sans-serif;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    height: 100vh; 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
 }
 
-.unico{
-    margin-top: 9em;
-}
-
-.tudo{
+.titulo{
     width: 250px;
-    color: white;
-    background-color: #8D191C;
-    font-size: large;
-    border-radius: 10px;
+    margin-top: 30px;
+    color: black;
+    font-size: x-large;
     text-align: center;
     padding: 10px; 
+    background-color: aqua;
+}
+
+.principal{
+    margin-left: 5%;
+    width: 20%;
+    margin-top: 130px;
+    background-color: blue;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .paci{
-     text-align: center;
      font-size: x-large;
 }
 
@@ -40,9 +48,6 @@ body{
     align-items: center;
   }
 
-h2{
-    color: white;
-}
 
 .forms{
     background-color: aqua;
