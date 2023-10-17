@@ -14,14 +14,16 @@ body {
     font-size: x-large;
     text-align: center;
     padding: 10px; 
-    background-color: aqua;
+   
 }
 
 .principal{
+    height: 250px;
     margin-left: 5%;
     width: 20%;
     margin-top: 130px;
-    background-color: blue;
+    background-color:#8D191C;
+    border-radius: 30px;
 }
 
 .centro {
@@ -32,7 +34,10 @@ body {
 }
 
 .paci{
+    margin-top: 10px;
+    color: white;
      font-size: x-large;
+    text-align: center;
 }
 
 .cabecalho {
@@ -50,7 +55,7 @@ body {
 
 
 .forms{
-    background-color: aqua;
+    color: white;
     font-size: larger;
     margin-top: 1em; 
     margin: 0 auto;
@@ -60,18 +65,21 @@ body {
 button{
     width: 180px;
     font-size: large;
-    background-color: #8D191C;
+    background-color:blue;
     border: none;
     color: white;
     padding: 10px 20px;
     display: flex;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
-    align-content: center;
+    flex-direction: column;
     justify-content: center;
     border-radius: 25px;
     cursor: pointer;
-    margin-left: 30px;
-    
+    margin-left: 65px;
+    margin-top: 10px;
 }
 
+.foto{
+    margin-left: 90%;
+}
