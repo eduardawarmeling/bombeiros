@@ -1,68 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f8e9ed;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .titulo {
-      width: 300px;
-      font-size: x-large;
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      background-color: #8D191C;
-      color: aliceblue;
-      border-radius: 10px;
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
-  
-  /* Para telas menores */
-  @media (max-width: 320px) {
-    .titulo {
-      width: 90%;
-    }
-  }
 
-  .caixa-prox {
-    margin-top: -40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;  /* Espaço entre a caixa de texto e o botão */
+body {
+  background-color: #f8e9ed;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cabecalho {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  background: rgb(212, 31, 31);
+  background: linear-gradient(0deg, rgba(212, 31, 31, 1) 26%, rgba(141, 25, 28, 1) 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  position: fixed;/* fixa o cabeçalho no topo */
+  top: 0;/* alinha o cabeçalho com o topo da página */
+  z-index: 1000;/* garante que o cabeçalho fique sobre outros conteúdos */
+}
+
+.titulo {
+  width: 300px;
+  font-size: x-large;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-align: center;/* Adicionado para centralizar o texto do título. */
+}
+
+.tudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.caixa-prox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 .caixa-larga {
-    width: 100%;  /* Alterado de 100% para 80% para ficar um pouco mais estreito */
-    padding: 30px;  /* Ajustado para 10px para diminuir a altura da caixa de texto */
-    top: 45%; 
-    font-size: 17px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 80%; /* Reduzido para 80% para ficar um pouco mais estreito */
+  padding: 30px;/* Ajustado para 10px para diminuir a altura da caixa de texto */
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 5;/* Valor menor que o do título */
+  position: relative;/* O z-index só funciona em elementos posicionados */
 }
 
 .prox {
-    width: 150px;
-    height: 30px;
-    background-color: #8D191C;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 25px;
-    cursor: pointer;
+  width: 150px;
+  height: 30px;
+  background-color: #8D191C;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
 }
-
