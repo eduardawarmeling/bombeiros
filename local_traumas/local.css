@@ -53,6 +53,11 @@ body {
     align-items: center;
   }
 
+  
+  .imagem {
+    margin-left: 160%;
+    margin-top: -80%;
+}
 
 .forms{
     color: white;
@@ -78,8 +83,8 @@ button{
     cursor: pointer;
     margin-left: 65px;
     margin-top: 10px;
+    
 }
 
-.foto{
-    margin-left: 90%;
-}
+
+

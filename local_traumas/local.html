@@ -26,22 +26,35 @@
                     <strong>Paciente é:<strong> 
                 </div>
         <br>
-                <div class="forms">
-                    <input type="radio" name="o"> Adulto <br>
-                    <input type="radio" name="o"> Criança
-                </div>
-                
-                <button type="submit">Selecionar</button>
-        
-        
-                </form>
-            </body>
 
-            <div class="foto">
-                <img src="boneco.png" width="1200px">
+        <body>
+   
+            <div class="forms">
+                 <!-- Botões para trocar a imagem -->
+                 <button onclick="mostrarImagem('imagem1')">Adulto</button>
+                <button onclick="mostrarImagem('imagem2')">Opção 2</button>
             </div>
-            </div>
-      
+
+            <!-- Imagens -->
+            <img id="imagem1" class="imagem" src="boneco n se.png" alt="Imagem 1">
+            <img id="imagem2" class="imagem" src="caminho/para/sua/imagem2.jpg" alt="Imagem 2">
+        
+            <script>
+                function mostrarImagem(id) {
+                    // Pega todas as imagens
+                    var imagens = document.querySelectorAll('.imagem');
+        
+                    // Esconde todas as imagens
+                    for(var i = 0; i < imagens.length; i++) {
+                        imagens[i].style.display = 'none';
+                    }
+        
+                    // Mostra a imagem específica
+                    document.getElementById(id).style.display = 'block';
+                }
+            </script>
+        </body>
+        </html>
 
 </html>
 </body>
